@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Product = () => {
@@ -46,12 +47,14 @@ const Product = () => {
               <img src={product.image} alt={product.name} className="w-full h-52 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
               <p className="text-gray-600">{product.price}</p>
-              <button
-                className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600"
-                onClick={() => console.log(`Added ${product.name} to cart`)}
-              >
-                Add to Cart
-              </button>
+              <Link href='/cart'>
+                <button
+                  className="mt-4 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-600 focus:outline-none focus:bg-yellow-600"
+                  onClick={() => console.log(`Added ${product.name} to cart`)}
+                >
+                  Add to Cart
+                </button>
+              </Link>
             </div>
           ))}
         </div>

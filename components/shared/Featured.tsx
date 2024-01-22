@@ -10,7 +10,9 @@ const Featured = () => {
       <h2 className="text-3xl font-medium mb-3 text-center  text-yellow-500">Featured Products</h2>
       <p className="text-gray-500 mb-4 text-center">Some of the product we offer.</p>
       <div className='flex justify-center mb-2'>
+        <Link href='/shop'>
         <Button className='border-2 border-yellow-500 bg-white text-black hover:bg-yellow-500 hover:text-white mb-4'>View More</Button>      
+        </Link>
       </div>
       <div className="flex flex-wrap -m-4">
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -20,7 +22,7 @@ const Featured = () => {
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">FRUITS</h3>
             <h2 className="text-gray-900 title-font text-lg font-medium">Oranges</h2>
-            <Link href="/shop" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
+            <Link href="/shop/fruits" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -30,7 +32,7 @@ const Featured = () => {
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">VEGETABLES</h3>
             <h2 className="text-gray-900 title-font text-lg font-medium">Lettuce</h2>
-            <Link href="/shop" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
+            <Link href="/shop/vegetables" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -40,7 +42,7 @@ const Featured = () => {
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">MILK</h3>
             <h2 className="text-gray-900 title-font text-lg font-medium">Oat Milk</h2>
-            <Link href="/shop" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
+            <Link href="/shop/dairy" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -50,7 +52,7 @@ const Featured = () => {
           <div className="mt-4">
             <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">PRODUCE</h3>
             <h2 className="text-gray-900 title-font text-lg font-medium">Eggs</h2>
-            <Link href="/shop" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
+            <Link href="/shop/meat" className="text-yellow-500 hover:underline inline-flex items-center">View More <span className="ml-1 hover:undeline"><BsArrowRight /></span></Link>          
           </div>
         </div>
       </div>
