@@ -1,3 +1,4 @@
+import OfferBanner from '@/components/shared/Banner';
 import Products from '@/components/shared/Products';
 import Link from 'next/link'
 import React from 'react'
@@ -64,6 +65,10 @@ const page = () => {
 
       {/* Best seller */}
       <Products />
+
+      {/* Banner */}
+      <OfferBanner/>
+      
     </div>
   )
 }
