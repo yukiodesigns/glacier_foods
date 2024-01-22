@@ -34,11 +34,11 @@ const OfferBanner = () => {
   return (
     <section className="bg-black text-white py-8">
       <div className="container mx-auto text-center">
-        <p className="text-lg">{offerText}</p>
+        <p className="text-xl font-bold">{offerText}</p>
         <div className="mt-4">
           <div className="flex items-center justify-center">
             <div className="countdown-item">
-              <span className="countdown-value mr-1">{timeRemaining.days}</span>
+              <span className="countdown-value mr-1"><strong>{timeRemaining.days}</strong></span>
               <span className="countdown-label mr-2">Days</span>
             </div>
             <div className="countdown-item">
@@ -46,11 +46,11 @@ const OfferBanner = () => {
               <span className="countdown-label mr-2">Hrs</span>
             </div>
             <div className="countdown-item">
-              <span className="countdown-value mr-1">{timeRemaining.minutes}</span>
+              <span className="countdown-value mr-1"><strong>{timeRemaining.minutes}</strong></span>
               <span className="countdown-label mr-2">Min</span>
             </div>
             <div className="countdown-item">
-              <span className="countdown-value mr-1">{timeRemaining.seconds}</span>
+              <span className="countdown-value mr-1"><strong>{timeRemaining.seconds}</strong></span>
               <span className="countdown-label mr-2">Sec</span>
             </div>
           </div>
