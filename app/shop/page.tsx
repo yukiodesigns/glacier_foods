@@ -1,3 +1,4 @@
+import Products from '@/components/shared/Products';
 import Link from 'next/link'
 import React from 'react'
 
@@ -29,6 +30,7 @@ const page = () => {
           </nav>
         </div>
       </section>
+
       {/* Categories */}
       <section className=' py-10 bg-gray-200'>
         <h2 className='text-2xl text-center  '>Our Categories</h2>
@@ -60,6 +62,8 @@ const page = () => {
         </div>
       </section>
 
+      {/* Best seller */}
+      <Products />
     </div>
   )
 }
