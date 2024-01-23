@@ -1,8 +1,18 @@
 import Link from 'next/link';
 import React from 'react';
 
+interface NavItem {
+  label: string;
+  link?: string;
+}
 
-const Breadcrumb = ({ title, navItems , bgImage}) => {
+interface BreadcrumbProps {
+  title: string;
+  navItems: NavItem[];
+  bgImage: string;
+}
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ title, navItems, bgImage }) =>  {
   return (
     <div>
       <section
