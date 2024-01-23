@@ -2,8 +2,14 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Breadcrumb from '@/components/shared/Breadcrumb';
 
-
+const bgImage = "https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/iStock-1194709125.jpg"
+const title = 'Meat';
+ const navItems = [
+   { label: 'Shop', link: '/shop' },
+   { label: 'Meat' },
+ ];
 const Meat = () => {
   // Sample product data
   const products = [
@@ -60,14 +66,11 @@ const Meat = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <Head>
-        <title>Product List</title>
-      </Head>
 
       {/* Breadcrumb */}
-      <nav className="text-sm font-medium text-gray-600 mb-4">
-        <Link href="/shop" className="hover:text-gray-800">Shop</Link> &gt; <span className="text-gray-800">Meat</span>
-      </nav>
+      <div className='mb-6'>
+       <Breadcrumb title={title} navItems={navItems} bgImage={bgImage} />
+      </div>
 
       {/* Product List and Filters */}
       <div className="flex flex-col md:flex-row">

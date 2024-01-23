@@ -2,8 +2,14 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Breadcrumb from '@/components/shared/Breadcrumb';
 
-
+const bgImage = "https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/iStock-1194709125.jpg"
+const title = 'Dairy Products';
+ const navItems = [
+   { label: 'Shop', link: '/shop' },
+   { label: 'Dairy' },
+ ];
 const Products = () => {
   // Sample product data
   const products = [
@@ -60,14 +66,10 @@ const Products = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <Head>
-        <title>Product List</title>
-      </Head>
-
-      {/* Breadcrumb */}
-      <nav className="text-sm font-medium text-gray-600 mb-4">
-        <Link href="/shop" className="hover:text-gray-800">Shop</Link> &gt; <span className="text-gray-800">Dairy</span>
-      </nav>
+       {/* Breadcrumb */}
+      <div className='mb-6'>
+      <Breadcrumb title={title} navItems={navItems} bgImage={bgImage} />
+      </div>
 
       {/* Product List and Filters */}
       <div className="flex flex-col md:flex-row">
@@ -95,12 +97,12 @@ const Products = () => {
             <h3 className="text-lg font-semibold mb-2">Category</h3>
             <ul className="list-none p-0">
               {filterOptions.map(option => (
-                      <li key={option.id} className="mb-1">
-                        <label className="flex items-center">
-                          <input type="checkbox" className="mr-2" />
-                          {option.label}
-                        </label>
-                      </li>
+                  <li key={option.id} className="mb-1">
+                  <label className="flex items-center">
+                  <input type="checkbox" className="mr-2" />
+                    {option.label}
+                  </label>
+                  </li>
               ))}
             </ul>
           </div>
