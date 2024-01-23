@@ -77,6 +77,7 @@ const Meat = () => {
         {/* Product List */}
         <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 bg-gray-100 overflow-x-hidden overflow-y-auto max-h-[600px] px-10 py-12">
           {paginatedProducts.map(product => (
+             <Link href='/shop/meat/id'>
             <div key={product.id} className="bg-white p-6 rounded-lg shadow-md">
               <img src={product.image} alt={product.name} className="w-full h-52 object-cover mb-4" />
               <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
@@ -88,6 +89,7 @@ const Meat = () => {
                 Add to Cart
               </button>
             </div>
+            </Link>
           ))}
         </div>
 
