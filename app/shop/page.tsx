@@ -1,9 +1,16 @@
 'use client';
 import OfferBanner from '@/components/shared/Banner';
+import Breadcrumb from '@/components/shared/Breadcrumb';
 import Products from '@/components/shared/Products';
 import Link from 'next/link'
 import React from 'react'
 
+const bgImage = "https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/iStock-1194709125.jpg"
+const title = 'Shop';
+ const navItems = [
+   { label: 'Home', link: '/' },
+   { label: 'Shop' },
+ ];
 const page = () => {
 
   const products = [
@@ -16,24 +23,8 @@ const page = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="relative bg-cover bg-center h-screen flex items-center" style={{backgroundImage: 'url("https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/iStock-1194709125.jpg")'}}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="container mx-auto text-white text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Shop</h1>
-          <nav className="text-sm md:text-base lg:text-lg" aria-label="Breadcrumb">
-            <ol className="list-none p-0 inline-flex">
-              <li className="flex items-center">
-                <Link href="/" className="text-gray-300 hover:underline">Home</Link>
-                <span className='ml-1 mr-1'>/</span>
-              </li>
-              <li className="flex items-center">
-                <span className="text-gray-400">Shop</span>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </section>
-
+      <Breadcrumb title={title} navItems={navItems} bgImage={bgImage}/>
+      
       {/* Categories */}
       <section className=' py-10 bg-gray-200'>
         <h2 className='text-2xl text-center  '>Our Categories</h2>
@@ -92,7 +83,7 @@ const page = () => {
             ))}
           </div>
         </div>
-    </section>
+      </section>
       
   </div>
   )
