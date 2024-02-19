@@ -9,7 +9,7 @@ interface NavItem {
 interface BreadcrumbProps {
   title: string;
   navItems: NavItem[];
-  bgImage: string;
+  bgImage?: string;
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ title, navItems, bgImage }) =>  {
