@@ -12,18 +12,18 @@ const title = 'Vegetables';
 const Vegetables = () => {
   // Sample product data
   const products = [
-    { id: 1, name: 'Product 1', price: '$19.99', category: 'Electronics', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 2, name: 'Product 2', price: '$29.99', category: 'Clothing', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
-    { id: 3, name: 'Product 3', price: '$39.99', category: 'Home & Garden', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 4, name: 'Product 4', price: '$19.99', category: 'Electronics', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
-    { id: 5, name: 'Product 5', price: '$29.99', category: 'Clothing', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 6, name: 'Product 6', price: '$39.99', category: 'Home & Garden', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
-    { id: 7, name: 'Product 7', price: '$19.99', category: 'Electronics', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 8, name: 'Product 8', price: '$29.99', category: 'Clothing', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
-    { id: 9, name: 'Product 9', price: '$39.99', category: 'Home & Garden', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 10, name: 'Product 10', price: '$19.99', category: 'Electronics', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
-    { id: 11, name: 'Product 11', price: '$29.99', category: 'Clothing', image: 'https://www.liveeatlearn.com/wp-content/uploads/2023/05/How-to-Cut-Pineapple-01.jpg' },
-    { id: 12, name: 'Product 12', price: '$39.99', category: 'Home & Garden', image: 'https://www.foodandwine.com/thmb/h7XBIk5uparmVpDEyQ9oC7brCpA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/A-Feast-of-Apples-FT-2-MAG1123-980271d42b1a489bab239b1466588ca4.jpg' },
+    { id: 1, name: 'Product 1', price: '$19.99', category: 'Electronics', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 2, name: 'Product 2', price: '$29.99', category: 'Clothing', image: 'https://th.bing.com/th/id/OIP.m-6XuGzY9xiTUm-YXV2DCQHaE2?rs=1&pid=ImgDetMain' },
+    { id: 3, name: 'Product 3', price: '$39.99', category: 'Home & Garden', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 4, name: 'Product 4', price: '$19.99', category: 'Electronics', image: 'https://th.bing.com/th/id/OIP.m-6XuGzY9xiTUm-YXV2DCQHaE2?rs=1&pid=ImgDetMain' },
+    { id: 5, name: 'Product 5', price: '$29.99', category: 'Clothing', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 6, name: 'Product 6', price: '$39.99', category: 'Home & Garden', image: 'https://th.bing.com/th/id/R.f3b28f91d838b3ec193d6ebf8e37bf21?rik=jpmZIyTZYJgUXw&riu=http%3a%2f%2fhandyhometips.com%2fwp-content%2fuploads%2f2016%2f12%2fpotatoes-1.jpg&ehk=mxK4XqfYXv4h7YBj9tao9oNY4qKmnJzy5uNNDuouoPg%3d&risl=&pid=ImgRaw&r=0' },
+    { id: 7, name: 'Product 7', price: '$19.99', category: 'Electronics', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 8, name: 'Product 8', price: '$29.99', category: 'Clothing', image: 'https://th.bing.com/th/id/R.f3b28f91d838b3ec193d6ebf8e37bf21?rik=jpmZIyTZYJgUXw&riu=http%3a%2f%2fhandyhometips.com%2fwp-content%2fuploads%2f2016%2f12%2fpotatoes-1.jpg&ehk=mxK4XqfYXv4h7YBj9tao9oNY4qKmnJzy5uNNDuouoPg%3d&risl=&pid=ImgRaw&r=0' },
+    { id: 9, name: 'Product 9', price: '$39.99', category: 'Home & Garden', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 10, name: 'Product 10', price: '$19.99', category: 'Electronics', image: 'https://th.bing.com/th/id/R.f3b28f91d838b3ec193d6ebf8e37bf21?rik=jpmZIyTZYJgUXw&riu=http%3a%2f%2fhandyhometips.com%2fwp-content%2fuploads%2f2016%2f12%2fpotatoes-1.jpg&ehk=mxK4XqfYXv4h7YBj9tao9oNY4qKmnJzy5uNNDuouoPg%3d&risl=&pid=ImgRaw&r=0' },
+    { id: 11, name: 'Product 11', price: '$29.99', category: 'Clothing', image: 'https://th.bing.com/th/id/OIP.QurEUPfQ6KKKIyDOTtkbLgHaFj?rs=1&pid=ImgDetMain' },
+    { id: 12, name: 'Product 12', price: '$39.99', category: 'Home & Garden', image: 'https://th.bing.com/th/id/R.f3b28f91d838b3ec193d6ebf8e37bf21?rik=jpmZIyTZYJgUXw&riu=http%3a%2f%2fhandyhometips.com%2fwp-content%2fuploads%2f2016%2f12%2fpotatoes-1.jpg&ehk=mxK4XqfYXv4h7YBj9tao9oNY4qKmnJzy5uNNDuouoPg%3d&risl=&pid=ImgRaw&r=0' },
     // Add more product data as needed
   ];
 
